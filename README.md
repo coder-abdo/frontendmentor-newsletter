@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontend mentor solution](https://your-solution-url.com)
-- Live Site URL: [vercel deployment](https://your-live-site-url.com)
+- Solution URL: [frontend mentor solution](https://www.frontendmentor.io/solutions/newsletter-signup-with-success-message-EKbvwioz-Y)
+- Live Site URL: [vercel deployment](https://frontendmentor-newsletter-two.vercel.app/)
 
 ## My process
 
