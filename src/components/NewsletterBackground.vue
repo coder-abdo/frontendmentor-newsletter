@@ -19,19 +19,20 @@
   width: 100%;
   max-height: 30rem;
   padding: 0;
-  border-radius: 3%;
   overflow-y: hidden;
 }
 img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 1rem;
+  aspect-ratio: 0.67;
 }
 @media screen and (min-width: 768px) {
   .newsletter-background {
     height: 100%;
     padding: 2rem;
     max-height: 100%;
-    overflow-y: hidden;
     flex-basis: 50%;
   }
 }

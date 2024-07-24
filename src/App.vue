@@ -9,7 +9,6 @@ const email = ref("");
 const isSuccess = ref(false);
 const handleSubmit = () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  console.log(email.value);
   if (emailRegex.test(email.value)) {
     error.value = false;
     isSuccess.value = true;
@@ -36,7 +35,7 @@ const handleDismiss = () => {
       />
       <NewsletterBackground />
     </div>
-    <SuccessMessage v-else @dismiss="handleDismiss" />
+    <SuccessMessage :email="email" v-else @dismiss="handleDismiss" />
   </main>
 </template>
 
@@ -55,7 +54,7 @@ main {
 @media screen and (min-width: 768px) {
   .main {
     flex-direction: row;
-    max-width: 80%;
+    max-width: 60%;
     width: 100%;
     height: 100%;
     margin: 0 auto;

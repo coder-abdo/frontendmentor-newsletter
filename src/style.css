@@ -37,7 +37,6 @@ ol {
 @media screen and (max-width: 768px) {
   body {
     background-color: var(--white);
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 }

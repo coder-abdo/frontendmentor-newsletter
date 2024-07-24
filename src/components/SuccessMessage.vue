@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import SuccessIcon from "@/assets/images/icon-success.svg";
+type Props = {
+  email: string;
+};
+defineProps<Props>();
 </script>
 
 <template>
@@ -9,8 +13,8 @@ import SuccessIcon from "@/assets/images/icon-success.svg";
       <h1>thanks for subscribing</h1>
       <p>
         Thanks for subscribing! A confirmation email has been sent to
-        <strong>ash@loremcompany.com.</strong> Please open it and click the
-        button inside to confirm your subscription.
+        <strong>{{ email }}</strong> Please open it and click the button inside
+        to confirm your subscription.
       </p>
     </div>
     <button @click="$emit('dismiss')">Dismiss message</button>
@@ -25,6 +29,7 @@ import SuccessIcon from "@/assets/images/icon-success.svg";
   max-width: 100%;
   max-height: 100%;
   display: flex;
+  padding: 4rem 2rem;
   flex-direction: column;
   .success-content {
     margin-top: 3rem;
@@ -45,7 +50,6 @@ import SuccessIcon from "@/assets/images/icon-success.svg";
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 4rem;
     background-color: var(--dark-slate-grey);
     border-radius: 1rem;
     color: var(--white);
@@ -53,7 +57,7 @@ import SuccessIcon from "@/assets/images/icon-success.svg";
     font-weight: 700;
     transition: background 0.3s ease-in-out;
     border: none;
-    padding: 3rem 4rem;
+    padding: 1rem;
     margin-top: auto;
     &:hover {
       cursor: pointer;

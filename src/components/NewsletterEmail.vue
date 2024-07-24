@@ -51,28 +51,26 @@ defineProps<Props>();
     font-weight: 700;
     color: var(--dark-slate-grey);
     text-transform: capitalize;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   p {
     color: var(--dark-slate-grey);
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   ul {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
   }
   li {
     color: var(--dark-slate-grey);
     display: flex;
     align-items: center;
-    font-size: clamp(1.6rem, 5vw, 1.8rem);
-    gap: 2rem;
-    &:is(:not(:last-child)) {
-      margin-bottom: 1rem;
-    }
+    font-size: clamp(1.4rem, 5vw, 1.6rem);
+    gap: 1rem;
   }
   .label {
     display: flex;
@@ -99,9 +97,9 @@ defineProps<Props>();
     height: 4rem;
     border-radius: 5px;
     border: 1px solid var(--grey);
-    padding: 1rem;
-    color: var(--charcoal-grey);
+    padding: 0 1rem;
     margin-bottom: 1rem;
+    color: var(--charcoal-grey);
     transition-property: background-color, color, border-color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -138,19 +136,10 @@ defineProps<Props>();
 }
 @media screen and (min-width: 768px) {
   .newsletter-email {
-    padding: 8% 4%;
     flex-basis: 50%;
     display: flex;
-    gap: 2rem;
     flex-direction: column;
+    justify-content: center;
   }
-  li {
-    &:is(:not(:last-child)) {
-      margin-bottom: 2rem;
-    }
-  }
-}
-button {
-  margin-top: 1rem;
 }
 </style>
